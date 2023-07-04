@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .con{
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgs .img{
+            width: 300px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="con">
+
+        <div class="imgs">
+            <image class="img" src="./img/blue.jpg"></image>
+        </div>
+
+        <div class="btns">
+            <button onclick="change()">Blue Shirt</button>
+            <button onclick="change2()">Grey Shirt</button>
+
+        </div>
+    </div>
+
+    <script>
+        let img = document.querySelector('.img')
+        function change(){
+         img.src='./img/blue.jpg'
+        }
+        function change2(){
+         img.src='./img/grey.jpg'
+        }
+    </script>
+</body>
+</html>
